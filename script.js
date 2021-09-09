@@ -45,18 +45,28 @@ const a_text = document.getElementById('a_text');
 const b_text = document.getElementById('b_text');
 const c_text = document.getElementById('c_text');
 const d_text = document.getElementById('d_text');
-
-let currentQuestion =0;
+const submitBtn = document.getElementById('Submit');
+let currentQuestion = 0;
 loadQuiz();
 
 function loadQuiz() {
     const currentQuizData = quizData
     [currentQuestion];
-    
+
     questionEl.innerText = currentQuizData.question;
     a_text.innerText = currentQuizData.a;
     b_text.innerText = currentQuizData.b;
     c_text.innerText = currentQuizData.c;
     d_text.innerText = currentQuizData.d;
-    currentQuestion++;
+    // currentQuestion++;
 }
+
+submitBtn.addEventListener('click',() => {
+    currentQuestion++;
+
+    loadQuiz();
+    // if (currentQuiz < quizData.length){
+
+    // }
+
+});

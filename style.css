@@ -26,6 +26,13 @@ body {
 .quiz-header{
     padding: 2rem;
 }
+h2 {
+    margin: 0;
+}
+ul li {
+    font-size: 1.1rem;
+    margin: s;
+}
 ul {
     list-style-type: none;
     padding: 0;
