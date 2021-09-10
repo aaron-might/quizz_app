@@ -26,6 +26,7 @@ body {
 .quiz-header{
     padding: 2rem;
 }
+
 h2 {
     padding: 1rem;
     margin: 0;
@@ -56,4 +57,8 @@ button {
 
 button:hover{
     background-color: #732d91;
+}
+button:focus {
+    outline: none;
+    background-color: #5e3370;
 }
