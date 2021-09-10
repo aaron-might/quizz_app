@@ -41,7 +41,7 @@ const quizData = [
     }
 ];
 const questionEl = document.getElementById('question');
-
+const quiz = document.getElementById('quiz');
 const answerEls = document.querySelectorAll('.answer')
 const a_text = document.getElementById('a_text');
 const b_text = document.getElementById('b_text');
@@ -101,8 +101,8 @@ console.log(answer)
             //todo :show results here
             //1 checkout if you have selected a question
             //2deselect when clicking on subkmit
-
-            alert('the end! get yourself a coke');
+            quiz.innerHTML = `<h2>You answered correctly ${score}</h2>`
+            // alert('the end! get yourself a coke');
         }
 
         }
