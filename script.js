@@ -101,7 +101,7 @@ console.log(answer)
             //todo :show results here
             //1 checkout if you have selected a question
             //2deselect when clicking on subkmit
-            quiz.innerHTML = `<h2>You answered correctly ${score}</h2>`
+            quiz.innerHTML = `<h2>You answered correctly at ${score}/${quizData.length} questions.</h2> <button onClick="location.reload()">Reload</button>`
             // alert('the end! get yourself a coke');
         }
 
